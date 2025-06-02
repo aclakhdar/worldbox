@@ -21,6 +21,15 @@ void chose_color(SDL_Renderer *ren, int i, int j)
 		case 5:
 			SDL_SetRenderDrawColor(ren, SAND_COLOR6);
 		break;
+		case 6:
+			SDL_SetRenderDrawColor(ren, WATER_SAND_COLOR1);
+		break;
+		case 7:
+			SDL_SetRenderDrawColor(ren, WATER_SAND_COLOR2);
+		break;
+		case 8:
+			SDL_SetRenderDrawColor(ren, WATER_SAND_COLOR3);
+		break;
 	default:
 		break;
 	}

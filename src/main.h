@@ -42,6 +42,9 @@
 	#define SAND_COLOR4	198, 191, 168, 255
 	#define SAND_COLOR5 193, 179, 138, 255
 	#define SAND_COLOR6 186, 190, 166, 255
+	#define WATER_SAND_COLOR1 130, 110, 70, 255
+	#define WATER_SAND_COLOR2 105, 95, 75, 255
+	#define WATER_SAND_COLOR3 120, 100, 85, 255
 
 	#define WATER_COLOR1 0, 33, 243, 50
 //element types
@@ -56,6 +59,10 @@ typedef struct s_window {
 	SDL_Window		*win;
 	SDL_Renderer	*ren;
 	SDL_Event 		event;
+	TTF_Font 		*font;
+	SDL_Surface 	*textSurface;
+	SDL_Texture 	*textTexture;
+	char 			current_text[256];
 	int				mouse_down;
 	int				running;
 	int				radius;
